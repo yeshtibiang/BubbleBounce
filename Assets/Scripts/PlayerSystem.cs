@@ -64,6 +64,7 @@ public class PlayerSystem : MonoBehaviour
 
     private void Die()
     {
+        SoundManager.Instance.PlayDieClip();
         currentLife--;
         currentLife = Mathf.Max(currentLife, 0);
         UIController.Instance.UpdateBubbleText((int)currentLife);

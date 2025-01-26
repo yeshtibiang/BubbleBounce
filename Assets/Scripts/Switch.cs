@@ -29,7 +29,7 @@ public class Switch : MonoBehaviour
                 isActivated = true;
                 leftRing.sprite = inactiveLeftRing;
                 rightRing.sprite = inactiveRightRing;
-
+                GameManager.Instance.CollectRing();
             }
         }
     }

@@ -130,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.CompareTag("NextLevel"))
         {
-            GameManager.Instance.LoadNextLevel();
+            UIController.Instance.SetLevelComplete();
         }
     }
 

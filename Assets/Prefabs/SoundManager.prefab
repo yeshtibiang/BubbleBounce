@@ -181,6 +181,7 @@ MonoBehaviour:
   pickUpSfx: {fileID: 8300000, guid: 3821361dd67fff64396e3cf423198196, type: 3}
   jumpSfx: {fileID: 8300000, guid: 4f57c8442bbd4214b8a2a1257442f3c2, type: 3}
   UIButtonSfx: {fileID: 8300000, guid: 56fdc8b8454f371429aaefa1b100e9dd, type: 3}
+  dieClip: {fileID: 8300000, guid: 9ae996669124ff247ba33fd82916f912, type: 3}
 --- !u!1 &6159661310577954079
 GameObject:
   m_ObjectHideFlags: 0

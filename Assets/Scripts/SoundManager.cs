@@ -14,6 +14,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip pickUpSfx;
     public AudioClip jumpSfx;
     public AudioClip UIButtonSfx;
+    public AudioClip dieClip;
 
 
 
@@ -38,6 +39,11 @@ public class SoundManager : MonoBehaviour
         {
             PlayMusic(backgroundMusic);
         }
+    }
+
+    public void PlayDieClip()
+    {
+        PlaySFX(dieClip);
     }
 
 

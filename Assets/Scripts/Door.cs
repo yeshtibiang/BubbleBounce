@@ -30,6 +30,14 @@ public class Door : MonoBehaviour
         }
     }
 
+    public void TryOpenWithGameManager()
+    {
+        if (GameManager.Instance.CanOpenLevelDoor())
+        {
+            OpenDoor();
+        }
+    }
+
     public void TryOpen(PlayerInventory playerInventory)
     {
         // verify if player has all the keys to open the door
@@ -76,7 +84,7 @@ public class Door : MonoBehaviour
 
     public void OpenDoorSprite()
     {
-        door.DOMoveY(door.position.y + 70, 1f);
+        door.DOMoveY(door.position.y + 70, 3f);
         GetComponent<BoxCollider2D>().enabled = false;
     }
 }
